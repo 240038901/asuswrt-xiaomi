@@ -16,7 +16,7 @@ Please check out the Wiki for this project
 
 ## Installation from bootloader or for advanced users
 - SPI flash - image needs to be written at 0x180000 offset
-- NAND flash - image needs to be written at 0x600000 offset
+- NAND flash - image needs to be written at 0x600000 offset, bootloader must use 2nd kernel partition
 
 ## How to build image from source
 1. cd release/src-ra-5010
