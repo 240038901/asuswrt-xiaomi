@@ -11,14 +11,12 @@ This is version of AsusWRT that works with Xiaomi Mi routers, based on MT7621 CP
 1. Download image from Releases page or build it from source
 2. Flash it to a router from stock firmware or bootloader
 
-## Installation from stock firmware
-Installation process is similar to OpenWRT
-- NAND flash - image needs to be split into two parts: first 4MB and the rest - first part needs to be written to kernel1 partition, the rest to rootfs0. nvram variable flag_try_sys1_failed needs to be to 1, kernel0 partition should be erased
-- NOR flash - image needs to be written to OS1 partition
+## Installation from firmware
+Please check out the Wiki for this project
 
-## Installation from bootloader
+## Installation from bootloader or for advanced users
 - SPI flash - image needs to be written at 0x180000 offset
-- NAND flash - image needs to be written at 0x600000 offset
+- NAND flash - image needs to be written at 0x600000 offset, bootloader must use 2nd kernel partition
 
 ## How to build image from source
 1. cd release/src-ra-5010
